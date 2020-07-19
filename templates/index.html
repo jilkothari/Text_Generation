@@ -1,0 +1,85 @@
+<html>
+
+<style>
+.header {
+ 
+  text-align: center;
+  color: white;
+font-family: "Brush Script MT", Courier, monospace;
+  font-size: 30px;
+}
+form {
+    margin: auto;
+    width: 35%;
+}
+label {
+  font-size: 20px;
+font-family: "Bradley Hand", cursive;
+font-weight: bold;
+}
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+
+  background-color:lightblue;
+  padding: 20px;
+
+}
+
+input[type=number]:focus {
+  background-color: lightblue;
+  border: 3px solid #555;
+}
+
+body {
+
+background-color : black;
+}
+
+
+</style>
+<body b>
+<div class="header">
+    <h1>Predict the text</h1>
+</div>
+<div >
+
+  <form action="/result" method="POST">
+
+    <label for="text">Text</label>
+    <input type="file" id="myFile">
+<br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
